@@ -275,7 +275,7 @@ public class AutoClicker extends Module
         if (System.currentTimeMillis() > this.nextDrop) {
             if (!this.dropping && MathUtil.random.nextInt(100) >= 85) {
                 this.dropping = true;
-                this.dropRate = 1.1 + MathUtil.random.nextDouble() * 0.15;
+                this.dropRate = 1.1 + MathUtil.random.nextDouble() * 0.5;
             }
             else {
                 this.dropping = false;
